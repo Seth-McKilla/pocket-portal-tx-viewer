@@ -27,6 +27,7 @@ export default function Transaction({ result }) {
         <div style={{ display: "flex" }}>
           <Image
             src="https://ethereum.org/static/6b935ac0e6194247347855dc3d328e83/34ca5/eth-diamond-black.png"
+            alt="Ethereum Logo"
             height={50}
             width={50}
           />

@@ -18,6 +18,7 @@ export default function Home() {
       <main className={styles.main}>
         <Image
           src="https://ethereum.org/static/810eb64d89629231aa4d8c7fe5f20ee5/31987/developers-eth-blocks.png"
+          alt="Ethereum Block Logo"
           height={300}
           width={420}
         />
@@ -33,6 +34,7 @@ export default function Home() {
         <a href="https://www.pokt.network/">
           <Image
             src="https://assets.website-files.com/609e7a6f2ec5c05d866ed6d3/60a7cd11f632654f936af07b_POKT_Logo_S_Color.svg"
+            alt="Pokt Logo"
             height={100}
             width={200}
           />
@@ -41,7 +43,7 @@ export default function Home() {
         <div className={styles.grid}>
           <Link href="/txs" passHref>
             <a href="" className={styles.card}>
-              <h2>Let's gooo! 🚀</h2>
+              <h2>{"Let's gooo! 🚀"}</h2>
             </a>
           </Link>
         </div>
