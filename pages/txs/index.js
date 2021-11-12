@@ -2,7 +2,8 @@ import styles from "../../styles/Home.module.css";
 import Head from "next/head";
 import Link from "next/link";
 
-export default function CurrentBlockTxs({ result }) {
+export default function Transactions({ result }) {
+  let date = new Date(parseInt(result.timestamp, 16) * 1000).toLocaleString();
   return (
     <div className={styles.container}>
       <Head>
@@ -13,6 +14,7 @@ export default function CurrentBlockTxs({ result }) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Most recent Ethereum transactions</h1>
+        <h2>{`As of ${date}`}</h2>
 
         <p className={styles.description}>
           Simply click on one of the transaction hashes to view who paid who and
